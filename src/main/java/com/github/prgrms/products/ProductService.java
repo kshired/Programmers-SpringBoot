@@ -29,4 +29,7 @@ public class ProductService {
     return productRepository.findAll();
   }
 
+  public boolean updateProductReviewCount(Long productId){
+    return productRepository.updateReviewCount(productId);
+  }
 }

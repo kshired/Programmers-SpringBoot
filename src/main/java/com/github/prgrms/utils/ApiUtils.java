@@ -18,6 +18,10 @@ public class ApiUtils {
     return new ApiResult<>(false, null, new ApiError(message, status));
   }
 
+  public static ApiResult<?> badRequestHandle(HttpStatus status) {
+    return new ApiResult<>(false, true, new ApiError("bad request occur", status));
+  }
+
   public static class ApiError {
     private final String message;
     private final int status;
