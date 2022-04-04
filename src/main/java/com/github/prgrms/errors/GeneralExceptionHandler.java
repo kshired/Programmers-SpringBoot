@@ -1,6 +1,5 @@
 package com.github.prgrms.errors;
 
-import com.github.prgrms.utils.ApiUtils;
 import com.github.prgrms.utils.ApiUtils.ApiResult;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
